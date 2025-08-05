@@ -25,21 +25,21 @@
     background-color: #000000 !important; /* Чистий чорний для шапки */
 }
 
-.navbar-nav .nav-link {
-    color: var(--fknt-red) !important; /* Червоний текст для посилань */
+.navbar-nav .contact-link {
+    color: var(--fknt-red) !important; /* Червоний текст для контактів */
     font-weight: 600;
     position: relative;
     padding-right: 25px !important;
     transition: all 0.3s ease;
 }
 
-.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+.navbar-nav .contact-link:hover, .navbar-nav .contact-link.active {
     color: var(--light) !important; /* Білий при наведенні/активності */
     background-color: var(--fknt-red); /* Червоний фон для акценту */
     border-radius: 5px;
 }
 
-.navbar-nav .nav-link::after {
+.navbar-nav .contact-link::after {
     content: '✈️';
     position: absolute;
     right: 5px;
@@ -49,7 +49,7 @@
     transition: opacity 0.3s, transform 0.3s;
 }
 
-.navbar-nav .nav-link:hover::after, .navbar-nav .nav-link.active::after {
+.navbar-nav .contact-link:hover::after, .navbar-nav .contact-link.active::after {
     opacity: 1;
     transform: translateY(-50%) rotate(45deg);
 }
@@ -66,7 +66,7 @@
 
 /* Герой-секція */
 .hero {
-    background: linear-gradient(135deg, var(--fknt-red), var(--fknt-dark));
+    background: linear-gradient(135deg, #000000, #1a0000, var(--fknt-red), var(--fknt-dark));
     background-size: 200% 200%;
     animation: gradientMove 10s ease infinite;
     color: var(--light);
@@ -79,35 +79,6 @@
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
-}
-
-.hero::before, .hero::after {
-    content: '✈️';
-    position: absolute;
-    font-size: 60px;
-    opacity: 0.3;
-}
-
-.hero::before {
-    top: 20%;
-    left: -50px;
-    animation: fly 8s linear infinite;
-}
-
-.hero::after {
-    bottom: 10%;
-    right: -50px;
-    animation: flyReverse 12s linear infinite;
-}
-
-@keyframes fly {
-    0% { transform: translateX(-50px); }
-    100% { transform: translateX(2000px); }
-}
-
-@keyframes flyReverse {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-2000px); }
 }
 
 /* Заголовки */
@@ -196,10 +167,6 @@ h1, h2, h5 {
         padding: 60px 0;
     }
 
-    .hero::before, .hero::after {
-        font-size: 40px;
-    }
-
     h1.display-3 {
         font-size: 2.2rem;
     }
@@ -210,5 +177,10 @@ h1, h2, h5 {
 
     .fknt-card:hover {
         transform: translateY(-10px) rotate(2deg) scale(1.05);
+    }
+
+    .navbar-nav .contact-link {
+        padding-right: 15px !important;
+        font-size: 0.9rem;
     }
 }
