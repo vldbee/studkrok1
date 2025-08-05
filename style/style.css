@@ -7,7 +7,6 @@
     --shadow: rgba(209, 12, 12, 0.5);
 }
 
-/* Фон для секцій */
 .bg-fknt-red {
     background-color: var(--fknt-red) !important;
 }
@@ -20,7 +19,6 @@
     background-color: var(--fknt-light) !important;
 }
 
-/* Логотип */
 .logo {
     height: 70px;
     transition: transform 0.3s ease-in-out;
@@ -30,7 +28,6 @@
     transform: rotate(360deg) scale(1.2);
 }
 
-/* Герой-секція */
 .hero {
     background: linear-gradient(135deg, var(--fknt-red), var(--fknt-dark));
     background-size: 200% 200%;
@@ -76,20 +73,17 @@
     100% { transform: translateX(-2000px); }
 }
 
-/* Заголовки */
 h1, h2, h5 {
     color: var(--fknt-red);
     text-shadow: 3px 3px 6px var(--shadow);
     font-weight: 700;
 }
 
-/* Текст */
 .text-fknt-red {
     color: var(--fknt-red);
     text-shadow: 1px 1px 3px var(--shadow);
 }
 
-/* Кнопки */
 .btn-fknt-red {
     background-color: var(--fknt-red);
     border-color: var(--fknt-red);
@@ -121,7 +115,6 @@ h1, h2, h5 {
     transform: scale(1.05);
 }
 
-/* Картки */
 .fknt-card {
     border: 3px solid var(--fknt-red);
     border-radius: 20px;
@@ -133,10 +126,8 @@ h1, h2, h5 {
 .fknt-card:hover {
     transform: translateY(-15px) rotate(2deg);
     box-shadow: 0 10px 25px var(--shadow);
-    /* Прибрано заливку фону */
 }
 
-/* Акордеон (для підсторінок) */
 .accordion-button {
     background-color: var(--light);
     color: var(--fknt-red);
