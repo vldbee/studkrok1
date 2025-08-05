@@ -1,0 +1,177 @@
+/* Основні кольори */
+:root {
+    --fknt-red: #d10c0c;
+    --fknt-light: #fff5f5;
+    --fknt-dark: #300000;
+    --light: #ffffff;
+    --shadow: rgba(209, 12, 12, 0.5);
+}
+
+/* Фон для секцій */
+.bg-fknt-red {
+    background-color: var(--fknt-red) !important;
+}
+
+.bg-fknt-dark {
+    background-color: var(--fknt-dark) !important;
+}
+
+.bg-fknt-light {
+    background-color: var(--fknt-light) !important;
+}
+
+/* Логотип */
+.logo {
+    height: 70px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+/* Герой-секція */
+.hero {
+    background: linear-gradient(135deg, var(--fknt-red), var(--fknt-dark));
+    background-size: 200% 200%;
+    animation: gradientMove 10s ease infinite;
+    color: var(--light);
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero::before, .hero::after {
+    content: '🛫';
+    position: absolute;
+    font-size: 60px;
+    opacity: 0.3;
+}
+
+.hero::before {
+    top: 20%;
+    left: -50px;
+    animation: fly 8s linear infinite;
+}
+
+.hero::after {
+    bottom: 10%;
+    right: -50px;
+    animation: flyReverse 12s linear infinite;
+}
+
+@keyframes fly {
+    0% { transform: translateX(-50px); }
+    100% { transform: translateX(2000px); }
+}
+
+@keyframes flyReverse {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-2000px); }
+}
+
+/* Заголовки */
+h1, h2, h5 {
+    color: var(--fknt-red);
+    text-shadow: 3px 3px 6px var(--shadow);
+    font-weight: 700;
+}
+
+/* Текст */
+.text-fknt-red {
+    color: var(--fknt-red);
+    text-shadow: 1px 1px 3px var(--shadow);
+}
+
+/* Кнопки */
+.btn-fknt-red {
+    background-color: var(--fknt-red);
+    border-color: var(--fknt-red);
+    color: var(--light);
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-fknt-red:hover {
+    background-color: var(--light);
+    color: var(--fknt-red);
+    box-shadow: 0 6px 15px var(--shadow);
+    transform: scale(1.1);
+}
+
+.btn-outline-fknt-red {
+    border: 2px solid var(--fknt-red);
+    color: var(--fknt-red);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-fknt-red:hover {
+    background-color: var(--fknt-red);
+    color: var(--light);
+    box-shadow: 0 6px 15px var(--shadow);
+    transform: scale(1.05);
+}
+
+/* Картки */
+.fknt-card {
+    border: 3px solid var(--fknt-red);
+    border-radius: 20px;
+    background-color: var(--light);
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px var(--shadow);
+}
+
+.fknt-card:hover {
+    transform: translateY(-15px) rotate(2deg);
+    box-shadow: 0 10px 25px var(--shadow);
+    /* Прибрано заливку фону */
+}
+
+/* Акордеон (для підсторінок) */
+.accordion-button {
+    background-color: var(--light);
+    color: var(--fknt-red);
+    font-weight: bold;
+    border: 1px solid var(--fknt-red);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--fknt-red);
+    color: var(--light);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.3rem var(--shadow);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .logo {
+        height: 50px;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero::before, .hero::after {
+        font-size: 40px;
+    }
+
+    h1.display-3 {
+        font-size: 2.2rem;
+    }
+
+    .btn-fknt-red {
+        padding: 10px 20px;
+    }
+}
