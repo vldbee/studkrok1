@@ -45,7 +45,7 @@
 }
 
 .hero::before, .hero::after {
-    content: '🛫';
+    content: '✈️';
     position: absolute;
     font-size: 60px;
     opacity: 0.3;
