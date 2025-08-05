@@ -26,7 +26,7 @@
 }
 
 .navbar-nav .contact-link {
-    color: var(--fknt-red) !important; /* Червоний текст для контактів */
+    color: var(--light) !important; /* Білий текст для контактів */
     font-weight: 600;
     position: relative;
     padding-right: 25px !important;
@@ -81,6 +81,18 @@
     100% { background-position: 0% 50%; }
 }
 
+/* Іконка літака в заголовку */
+.plane-icon {
+    height: 1.2em; /* Розмір відносно тексту */
+    vertical-align: middle; /* Вирівнювання з текстом */
+    margin-left: 0.2em; /* Невеликий відступ від тексту */
+    transition: transform 0.3s ease-in-out;
+}
+
+.plane-icon:hover {
+    transform: rotate(45deg) scale(1.2); /* Ефект при наведенні, подібний до логотипу */
+}
+
 /* Заголовки */
 h1, h2, h5 {
     color: var(--fknt-red);
@@ -92,6 +104,12 @@ h1, h2, h5 {
 .text-fknt-red {
     color: var(--fknt-red);
     text-shadow: 1px 1px 3px var(--shadow);
+}
+
+.info-text {
+    color: #000000; /* Чорний текст */
+    font-size: 1.2rem; /* Трохи більший розмір */
+    line-height: 1.6; /* Покращена читабельність */
 }
 
 /* Кнопки */
@@ -157,6 +175,38 @@ h1, h2, h5 {
     box-shadow: 0 0 0 0.3rem var(--shadow);
 }
 
+/* Контакти у футері */
+.footer-contact {
+    color: var(--light);
+    text-decoration: underline;
+    font-weight: 600;
+    position: relative;
+    padding-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.footer-contact:hover {
+    color: var(--light);
+    background-color: var(--fknt-red);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.footer-contact::after {
+    content: '✈️';
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.footer-contact:hover::after {
+    opacity:1;
+    transform: translateY(-50%) rotate(45deg);
+}
+
 /* Адаптивність */
 @media (max-width: 768px) {
     .logo {
@@ -182,5 +232,17 @@ h1, h2, h5 {
     .navbar-nav .contact-link {
         padding-right: 15px !important;
         font-size: 0.9rem;
+    }
+
+    .footer-contact {
+        font-size: 0.9rem;
+    }
+
+    .plane-icon {
+        height: 1em; /* Менший розмір для мобільних */
+    }
+
+    .info-text {
+        font-size: 1.1rem; /* Трохи менший розмір для мобільних */
     }
 }
