@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студрада ФКНТ | Навчання</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!-- шапка -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="Логотип ФКНТ" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link contact-link" href="https://t.me/sr_fknt">Телеграм</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact-link" href="https://t.me/sr_fcst_bot">Бот для зв'язку</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- герой-секція -->
+    <section class="hero text-center py-5">
+        <div class="container position-relative">
+            <h1 class="display-3 text-white fw-bold">Навчання з ФКНТ!<img src="assets/plane.png" alt="Літак" class="plane-icon"></h1>
+            <p class="lead text-white">Все, що потрібно знати першокурснику: карти, розклад, стипендії та більше!</p>
+            <a href="#learning-info" class="btn btn-fknt-red btn-lg">Дізнайся більше!</a>
+        </div>
+    </section>
+
+    <!-- інформація про навчання -->
+    <section id="learning-info" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-fknt-red fw-bold text-center mb-5">Все про навчання</h2>
+            <div class="accordion" id="learningAccordion">
+                <!-- Карти КАІ -->
+                <div class="accordion-item fknt-card">
+                    <h2 class="accordion-header" id="headingMap">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMap" aria-expanded="true" aria-controls="collapseMap">
+                            Карти КАІ
+                        </button>
+                    </h2>
+                    <div id="collapseMap" class="accordion-collapse collapse show" aria-labelledby="headingMap" data-bs-parent="#learningAccordion">
+                        <div class="accordion-body learning-text">
+                            <p>Знаємо, як легко загубитися перші дні навчання. Тому зробили для вас інтерактивну мапу — корпуси, гуртожитки й усе корисне поруч.</p>
+                            <div class="text-center">
+                                <a href="https://www.google.com/maps/d/u/0/edit?mid=10bcc2Zp086kBM4H3koWbXG3UCKUy87w&usp=sharing" class="btn btn-fknt-red btn-learning" target="_blank">Карта КАІ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Нумерація авдиторій -->
+                <div class="accordion-item fknt-card">
+                    <h2 class="accordion-header" id="headingRooms">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRooms" aria-expanded="false" aria-controls="collapseRooms">
+                            Нумерація авдиторій
+                        </button>
+                    </h2>
+                    <div id="collapseRooms" class="accordion-collapse collapse" aria-labelledby="headingRooms" data-bs-parent="#learningAccordion">
+                        <div class="accordion-body learning-text">
+                            <p>Кожна авдиторія має свій номер. Як його розшифрувати?</p>
+                            <ul>
+                                <li>Перша цифра – номер корпусу</li>
+                                <li>Перша цифра після крапки – поверх корпусу</li>
+                                <li>Всі цифри після крапки позначають – номер аудиторії</li>
+                            </ul>
+                            <div class="p-3 border border-3 border-fknt-red border-dashed rounded text-center fknt-formula">
+                                <p class="mb-0"><strong>Наприклад:</strong> авдиторія №6.201 – 6 корпус, 2 поверх, авдиторія 201</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Списки та нумерація груп -->
+                <div class="accordion-item fknt-card">
+                    <h2 class="accordion-header" id="headingGroups">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGroups" aria-expanded="false" aria-controls="collapseGroups">
+                            Списки та нумерація груп
+                        </button>
+                    </h2>
+                    <div id="collapseGroups" class="accordion-collapse collapse" aria-labelledby="headingGroups" data-bs-parent="#learningAccordion">
+                        <div class="accordion-body learning-text">
+                            <p>Б-122-23-1-ШІ — це не просто рандомні букви й цифри, а й назва академгрупи. Списки груп будуть за тиждень до початку навчання.</p>
+                            <div class="text-center">
+                                <a href="https://fcst.nau.edu.ua/%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B8-%D0%B3%D1%80%D1%83%D0%BF/" class="btn btn-fknt-red btn-learning" target="_blank">Списки груп</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Все про розклад -->
+                <div class="accordion-item fknt-card">
+                    <h2 class="accordion-header" id="headingSchedule">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSchedule" aria-expanded="false" aria-controls="collapseSchedule">
+                            Все про розклад: коли, що і де дивитись
+                        </button>
+                    </h2>
+                    <div id="collapseSchedule" class="accordion-collapse collapse" aria-labelledby="headingSchedule" data-bs-parent="#learningAccordion">
+                        <div class="accordion-body learning-text">
+                            <p>Розклад занять з’явиться за кілька днів до початку семестру. Пари проходять у першій половині дня, а сам розклад поділений на два тижні, які чергуються між собою (1 тиждень, потім 2, і знову 1).</p>
+                            <p>Слідкувати за оновленнями розкладу можете у Digital University — кабінет, через який ви подавали документи.</p>
+                            <div class="text-center">
+                                <a href="https://portal.nau.edu.ua/schedule/group/list" class="btn btn-fknt-red btn-learning" target="_blank">Розклад</a>
+                            </div>
+                            <p class="mt-3">Пари тривають по 90 хвилин, між півпарами — 5 хвилин перерви, а між повноцінними парами — 15 хвилин.</p>
+                            <div class="text-center">
+                                <img src="assets/rozklad.png" alt="Розклад дзвінків" class="img-fluid mt-3 fknt-image" style="max-width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Рейтинговий бал -->
+                <div class="accordion-item fknt-card">
+                    <h2 class="accordion-header" id="headingRating">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRating" aria-expanded="false" aria-controls="collapseRating">
+                            Рейтинговий бал
+                        </button>
+                    </h2>
+                    <div id="collapseRating" class="accordion-collapse collapse" aria-labelledby="headingRating" data-bs-parent="#learningAccordion">
+                        <div class="accordion-body learning-text">
+                            <p>Рейтинговий бал – це підсумок ваших старань за семестр, на основі якого формується рейтинговий список на стипендію.</p>
+                            <div class="p-3 border border-3 border-fknt-red border-dashed rounded text-center fknt-formula">
+                                <p class="mb-0"><strong>Примітка:</strong> Якщо бал нижче 60 – предмет не зарахований і це бігунок, через незакриття якого вас можуть відрахувати!</p>
+                            </div>
+                            <p class="fw-bold mt-4">Формула рейтингового балу: Середній бал всіх предметів × 0.9 + додаткові бали = рейтинговий бал</p>
+                            <div class="p-3 border border-3 border-fknt-red border-dashed rounded text-center fknt-formula">
+                                <p class="mb-0"><strong>Наприклад:</strong> 100 × 0.9 + 0 додаткових = 90 - Ваш рейтинговий бал</p>
+                            </div>
+                            <p class="mt-3">Додаткові бали – бонус за активність поза парами. Вони нараховуються за участь у науково-технічному, науковому, громадському, спортивному напрямах.</p>
+                            <div class="p-3 border border-3 border-fknt-red border-dashed rounded text-center fknt-formula">
+                                <p class="mb-0"><strong>Примітка:</strong> За кожну категорію можна отримати до 2.5 балів, критерії нарахування можна переглянути за <a href="https://drive.google.com/file/d/1oTJwKBvoK8vO7_kcyUBOQRa-nDk7G_Km/view?usp=sharing" target="_blank" class="footer-contact">посиланням</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Все про стипендію -->
+                <div class="accordion-item fknt-card">
+                    <h2 class="accordion-header" id="headingScholarship">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScholarship" aria-expanded="false" aria-controls="collapseScholarship">
+                            Все про стипендію простими словами
+                        </button>
+                    </h2>
+                    <div id="collapseScholarship" class="accordion-collapse collapse" aria-labelledby="headingScholarship" data-bs-parent="#learningAccordion">
+                        <div class="accordion-body learning-text">
+                            <p>Першу стипендію нараховують за результатами НМТ — її отримають 40% вступників-бюджетників із найвищими балами. Після кожної сесії формують новий рейтинг, і саме за ним визначають, хто отримує стипендію в наступному семестрі.</p>
+                            <p>Існує 3 види стипендій:</p>
+                            <ul>
+                                <li><strong>Академічна стипендія (2000 грн)</strong> – отримують 40% потоку з рейтингу</li>
+                                <li><strong>Підвищена стипендія (2910 грн)</strong> – отримують ті, хто пройшов поріг на підвищену стипендію</li>
+                                <li><strong>Соціальна стипендія (1180 грн)</strong> – отримують за наявністю пільг</li>
+                            </ul>
+                            <div class="text-center">
+                                <img src="assets/pilga.jpg" alt="Інформація про пільги" class="img-fluid mt-3 fknt-image" style="max-width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- футер -->
+    <footer class="text-center py-4 text-white bg-fknt-dark">
+        <div class="container">
+            <p class="fw-bold">© 2025 Студкуратори ФКНТ КАІ<img src="assets/plane.png" alt="Літак" class="plane-icon"></p>
+            <p>
+                <a class="footer-contact" href="mailto:stud.rada.fknt@stud.kai.edu.ua">stud.rada.fknt@stud.kai.edu.ua</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

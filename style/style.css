@@ -112,6 +112,11 @@ h1, h2, h5 {
     line-height: 1.6; /* Покращена читабельність */
 }
 
+.learning-text {
+    font-size: 1.3rem; /* Збільшений розмір тексту для learning.html */
+    line-height: 1.7; /* Покращена читабельність */
+}
+
 /* Кнопки */
 .btn-fknt-red {
     background-color: var(--fknt-red);
@@ -144,6 +149,10 @@ h1, h2, h5 {
     transform: scale(1.05);
 }
 
+.btn-learning {
+    font-size: 1.4rem; /* Збільшений розмір тексту для кнопок у learning.html */
+}
+
 /* Картки */
 .fknt-card {
     border: 3px solid var(--fknt-red);
@@ -164,6 +173,7 @@ h1, h2, h5 {
     color: var(--fknt-red);
     font-weight: bold;
     border: 1px solid var(--fknt-red);
+    font-size: 1.5rem; /* Збільшений розмір заголовків акордеону */
 }
 
 .accordion-button:not(.collapsed) {
@@ -173,6 +183,31 @@ h1, h2, h5 {
 
 .accordion-button:focus {
     box-shadow: 0 0 0 0.3rem var(--shadow);
+}
+
+/* Формула та примітки */
+.fknt-formula {
+    background-color: var(--fknt-light);
+    border: 2px dashed var(--fknt-red);
+    box-shadow: 0 3px 10px var(--shadow);
+    font-size: 1.3rem; /* Розмір для приміток */
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.fknt-formula:hover {
+    transform: scale(1.05);
+}
+
+/* Зображення */
+.fknt-image {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.fknt-image:hover {
+    transform: scale(1.03);
 }
 
 /* Контакти у футері */
@@ -203,7 +238,7 @@ h1, h2, h5 {
 }
 
 .footer-contact:hover::after {
-    opacity:1;
+    opacity: 1;
     transform: translateY(-50%) rotate(45deg);
 }
 
@@ -244,5 +279,21 @@ h1, h2, h5 {
 
     .info-text {
         font-size: 1.1rem; /* Трохи менший розмір для мобільних */
+    }
+
+    .learning-text {
+        font-size: 1.1rem; /* Зменшений розмір для мобільних */
+    }
+
+    .accordion-button {
+        font-size: 1.2rem; /* Зменшений розмір заголовків акордеону для мобільних */
+    }
+
+    .fknt-formula {
+        font-size: 1.1rem; /* Зменшений розмір для мобільних */
+    }
+
+    .btn-learning {
+        font-size: 1.2rem; /* Зменшений розмір тексту кнопок для мобільних */
     }
 }
