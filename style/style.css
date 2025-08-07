@@ -193,7 +193,7 @@ h1, h2, h5 {
 }
 
 .footer-contact::after {
-    content: '✈️';
+    content: ' ✈️';
     position: absolute;
     right: 5px;
     top: 50%;
